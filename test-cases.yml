@@ -1,1 +1,103 @@
+--- 
+# functional
+- summary: |
+    Поиск товара по ключевому слову
+  requirement: |
+    При вводе ключевого слова в форму поиска должны отобразиться товары соответствующие ключевому слову
+  prerequisites: |
+    Открыта главная страница https://products-store-ru.hexlet.app/
+    Выбран язык сайта English
+    В каталоге товаров существует товар Apple
+  test-data: |
+    Ключевое слово в форме поиска товара = Apple
+  steps:
+    - Вводим в форму поиска товар Apple
+  expected-result: |
+    Отобразился товар Apple
 
+- summary: |
+    Поиск товара по категории
+  requirement: |
+    При выборе категории пользователю должен отобразиться коталог товаров из выбранной категории
+  prerequisites: |
+    Открыта главная страница https://products-store-ru.hexlet.app/
+    Выбран язык сайта English
+    В приложении существует категория товаров под названием groceries
+  test-data: |
+    Категория товаров = groceries
+  steps:
+    - Выбираем в Category каталог товаров groceries
+  expected-result: |
+    Отобразился каталог товаров из категории groceries
+
+- summary: |
+    Фильтрация товаров по бренду
+  requirement: |
+    При выборе фильтров пользователю должен отобразиться коталог отфильтрованных товаров по бренду
+  prerequisites: |
+    Открыта главная страница https://products-store-ru.hexlet.app/
+    Выбран язык сайта English
+    В приложении существует товар бренда Essence, Gucci
+  test-data: |
+    Бренд 1 = Essence
+    Бренд 2 = Gucci
+  steps:
+    - Выбираем в фильтре бренд Essence
+    - Выбираем в фильтре бренд Gucci
+  expected-result: |
+    Отобразился каталог товаров бренда Essence и Gucci
+
+- summary: |
+    Просмотр товара и просмотр подробной информации о товаре
+  requirement: |
+    Товар доступен для просмотра и для просмотра подробной информации
+  prerequisites: |
+    Открыта главная страница https://products-store-ru.hexlet.app/
+    Выбран язык сайта English
+    В каталоге товара существует товар Cucumber
+  test-data: |
+    Товар = Cucumber
+  steps:
+    - Выбираем категорию groceries
+    - Выбираем карточку товара с названием Cucumber
+  expected-result: |
+    Выполнилься редирект на страницу с товаром и описанием товара
+
+- summary: |
+    Добавление товара в корзину и просмотр содержимого корзины
+  requirement: |
+    Товар доступен для добавления в корзину и доступен для просмотра в корзине
+  prerequisites: |
+    Открыта главная страница https://products-store-ru.hexlet.app/
+    Выбран язык сайта English
+    В каталоге товара существует товар Cucumber
+    В каталоге товара существует товар Apple
+  test-data: |
+    Товар 1 = Cucumber
+    Товар 2 = Apple
+  steps:
+    - Выбираем категорию groceries
+    - В карточке товара с названием Cucumber нажимаем "Add to cart"
+    - В карточке товара с названием Apple нажимаем "Add to cart"
+  expected-result: |
+    Товар добавился в корзину при переходе в корзину доступен для просмотра
+
+- summary: |
+    Возможность переключить язык интерфейса
+  requirement: |
+    При переключении языка весь текст меняется на выбранный язык
+  prerequisites: |
+    Открыта главная страница https://products-store-ru.hexlet.app/
+    Выбран язык сайта English
+    Доступен выбор языка Russian
+  test-data: |
+    Язык = Russian
+  steps:
+    - Выбираем в Language язык Russian
+  expected-result: |
+    Весь текст сайта перевелся на русский язык
+--- 
+# non-functional
+
+--- 
+# implicit
