@@ -1,5 +1,6 @@
 --- 
 # functional
+
 - summary: |
     Поиск товара по ключевому слову
   requirement: |
@@ -85,7 +86,7 @@
 - summary: |
     Возможность переключить язык интерфейса
   requirement: |
-    При переключении языка весь текст меняется на выбранный язык
+    Есть возможность переключить язык
   prerequisites: |
     Открыта главная страница https://products-store-ru.hexlet.app/
     Выбран язык сайта English
@@ -95,9 +96,11 @@
   steps:
     - Выбираем в Language язык Russian
   expected-result: |
-    Весь текст сайта перевелся на русский язык
+    Language переключился на Russian
 --- 
 # non-functional
+
+
 
 --- 
 # implicit
