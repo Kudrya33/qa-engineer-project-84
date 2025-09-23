@@ -100,7 +100,121 @@
 --- 
 # non-functional
 
+- summary: |
+     Удобство использования сайта
+  requirement: |
+    Удобство использования сайта
+  prerequisites: |
+    Открыта главная страница https://products-store-ru.hexlet.app/
+    Выбран язык сайта English
+  test-data: |
+  
+  steps:
+    - Визуальный осмотр интерфейса на удабство использования
+  expected-result: |
+    Сайт удобен в использовании
 
+- summary: |
+     Скорость работы сайта
+  requirement: |
+    Сайт должен быстро открывать страницы и загружаться
+  prerequisites: |
+    Открыта страница https://www.google.com/
+  test-data: |
+    URL = https://products-store-ru.hexlet.app/
+  steps:
+    - Вводим в форме URL фдресса наш сайт https://products-store-ru.hexlet.app/
+  expected-result: |
+    Сайт загрузился менее чем за 10ms
 
+- summary: |
+     Защита данных пользователя и безопасность сайта
+  requirement: |
+    Сайт должен быть безопасен испольуется https, данные заказа пользователя передаются в зашифрованном виде
+  prerequisites: |
+    Открыта страница https://www.google.com/
+  test-data: |
+    URL = https://products-store-ru.hexlet.app/
+  steps:
+    - Вводим в форме URL адресса наш сайт https://products-store-ru.hexlet.app/
+  expected-result: |
+    Сайт загрузился по https
+
+- summary: |
+     Мобильная версия сайта
+  requirement: |
+    При открытии сайта с мобильного устройства должна открываться версия для мобильных устройств
+  prerequisites: |
+    Вход выполняется с мобильного устройства
+    Открыта страница https://www.google.com/
+  test-data: |
+    URL = https://products-store-ru.hexlet.app/
+  steps:
+    - Вводим в форме URL адресса наш сайт https://products-store-ru.hexlet.app/
+  expected-result: |
+    Выполнен редирект на мобильную версию сайта
+
+- summary: |
+     Совместимость с последними версиями браузеров
+  requirement: |
+    Сайт должен корректно работать и отображаться на всех версиях браузеров
+  prerequisites: |
+    Установлены последнии версии браузеров Chrome, Opera, FireFox
+    Открыта страница https://www.google.com/
+  test-data: |
+    URL = https://products-store-ru.hexlet.app/
+  steps:
+    - Вводим в форме URL адресса наш сайт https://products-store-ru.hexlet.app/
+    - Повторяекм первый шаг на всех установленных браузерах
+  expected-result: |
+    Сайт поддерживается и корректно отображается
+
+- summary: |
+     Обрабатка большого количества трафика
+  requirement: |
+    Сайт должен корректно работать при высокой загруженности трафика
+  prerequisites: |
+    Открыта страница https://products-store-ru.hexlet.app/
+  test-data: |
+    Браузео Chrome
+  steps:
+    - Открываем DevTool
+    - Переходим на вкладку networck
+    - Устанавливаем значение throttling на 3G
+  expected-result: |
+    Сайт загружается
+
+- summary: |
+     Доступ к сайту на различных устройствах
+  requirement: |
+    Сайт должен корректно работать и быть доступным на разных устройствах
+  prerequisites: |
+    Доступен для тестированя ПК
+    Доступен для тестированя Ноутбук
+    Доступен для тестированя Смартфон
+    Открыта страница https://www.google.com/
+  test-data: |
+    
+  steps:
+    - Переход на страниццу https://products-store-ru.hexlet.app/
+    - Повторение первого шага на всех устрпойствах
+  expected-result: |
+    Сайт загружается  
+
+- summary: |
+     Локализация (перевод) на русский и английский языки
+  requirement: |
+    Сайт должен переводится на соответствующий выбору пользователя язык
+  prerequisites: |
+    Открыта страница https://products-store-ru.hexlet.app/
+    Выбран язык сайта English
+  test-data: |
+    Язык = Russian
+  steps:
+    - Изменяем Language на Russian
+  expected-result: |
+    Все надписи сайта отображаются на русском языке
 --- 
 # implicit
+
+
