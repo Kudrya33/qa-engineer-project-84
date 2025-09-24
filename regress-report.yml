@@ -1,32 +1,53 @@
 --- 
 # functional ------------------------------------------------------------------------------------------------------
+test-cases:
+  - summary: |
+      Краткое описание тест-кейса. Например, проверка входа пользователя с существующими логином и паролем
+    status: pass
+
+  - summary: |
+      Краткое описание тест-кейса. Например, проверка входа пользователя с существующими логином и паролем
+    status: fail
+
+bugreports:
+  - summary: |
+      Короткое описание ошибки
+    environment: |
+      Ссылка на билд/коммит/версия ПО и всего окружения
+    steps-to-reproduce: |
+      Полный перечень шагов для воспроизведения и описание, на каком шаге произошла ошибка
+    expected-result: |
+      Какой результат должен был быть без ошибки
+    actual-result: |
+      Какой результат получился на самом деле
+
 
 test-cases:
   - summary: |
       Поиск товара по ключевому слову
-  status: pass
+    status: pass
 
   - summary: |
       Поиск товара по ключевому слову
-  status: pass
+    status: pass
 
 test-cases:
   - summary: |
       Поиск товара по категории
-  status: pass
+    status: pass
 
   - summary: |
       Поиск товара по категории
-  status: pass
+    status: pass
 
 test-cases:
   - summary: |
       Фильтрация товаров по бренду
-  status: pass
+    status: pass
 
   - summary: |
       Фильтрация товаров по бренду
-  status: fail
+    status: fail
   
 bugreports:
   - summary: |
@@ -45,11 +66,11 @@ bugreports:
 test-cases:
   - summary: |
       Просмотр товара и просмотр подробной информации о товаре
-  status: fail
+    status: fail
 
   - summary: |
       Просмотр товара и просмотр подробной информации о товаре
-  status: fail
+    status: fail
   
 bugreports:
   - summary: |
@@ -68,20 +89,20 @@ bugreports:
 test-cases:
   - summary: |
       Добавление товара в корзину и просмотр содержимого корзины
-  status: pass
+    status: pass
 
   - summary: |
       Добавление товара в корзину и просмотр содержимого корзины
-  status: pass
+    status: pass
 
 test-cases:
   - summary: |
       Возможность переключить язык интерфейса
-  status: pass
+    status: pass
 
   - summary: |
       Возможность переключить язык интерфейса
-  status: pass
+    status: pass
 
 --- 
 # non-functional ------------------------------------------------------------------------------------------------------
@@ -89,11 +110,11 @@ test-cases:
 test-cases:
   - summary: |
       Удобство использования сайта
-  status: fail
+    status: fail
 
   - summary: |
       Удобство использования сайта
-  status: fail
+    status: fail
   
 bugreports:
   - summary: |
@@ -114,29 +135,29 @@ bugreports:
 test-cases:
   - summary: |
       Скорость работы сайта
-  status: fail
+    status: fail
 
   - summary: |
       Скорость работы сайта
-  status: pass
+    status: pass
 
 test-cases:
   - summary: |
       Защита данных пользователя и безопасность сайта
-  status: pass
+    status: pass
 
   - summary: |
       Защита данных пользователя и безопасность сайта
-  status: pass
+    status: pass
   
 test-cases:
   - summary: |
       Мобильная версия сайта
-  status: fail
+    status: fail
 
   - summary: |
       Мобильная версия сайта
-  status: fail
+    status: fail
   
 bugreports:
   - summary: |
@@ -154,20 +175,20 @@ bugreports:
 test-cases:
   - summary: |
       Совместимость с последними версиями браузеров
-  status: pass
+    status: pass
 
   - summary: |
       Совместимость с последними версиями браузеров
-  status: pass
+    status: pass
 
 test-cases:
   - summary: |
       Обрабатка большого количества трафика
-  status: fail
+    status: fail
 
   - summary: |
       Обрабатка большого количества трафика
-  status: fail
+    status: fail
   
 bugreports:
   - summary: |
@@ -187,20 +208,20 @@ bugreports:
 test-cases:
   - summary: |
       Доступ к сайту на различных устройствах
-  status: pass
+    status: pass
 
   - summary: |
       Доступ к сайту на различных устройствах
-  status: pass
+    status: pass
 
 test-cases:
   - summary: |
       Локализация (перевод) на русский и английский языки
-  status: fail
+    status: fail
 
   - summary: |
       Локализация (перевод) на русский и английский языки
-  status: fail
+    status: fail
   
 bugreports:
   - summary: |
@@ -222,11 +243,11 @@ bugreports:
 test-cases:
   - summary: |
       Личный кабинет пользователя
-  status: fail
+    status: fail
 
   - summary: |
       Личный кабинет пользователя
-  status: fail
+    status: fail
   
 bugreports:
   - summary: |
@@ -245,11 +266,11 @@ bugreports:
 test-cases:
   - summary: |
       Автоматическая смена языка под настройки браузера пользователя
-  status: fail
+    status: fail
 
   - summary: |
       Автоматическая смена языка под настройки браузера пользователя
-  status: fail
+    status: fail
   
 bugreports:
   - summary: |
