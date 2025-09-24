@@ -1,4 +1,3 @@
-
 # functional ------------------------------------------------------------------------------------------------------
 test-cases:
   - summary: |
@@ -12,16 +11,16 @@ test-cases:
 bugreports:
   - summary: |
       Товар не фильтруется по бренду
-  environment: |
-    Google Chrome Версия: 140.0.7339.128 (Официальная сборка) (64 бит)
-    ОС Windows 10 Pro ver 22H2
-  steps-to-reproduce: |
-    1. Зайти на страницу https://products-store-ru.hexlet.app/
-    2. Выбираем бренд Gucci
-  expected-result: |
-    Должен отобразиться список товаров Gussi
-  actual-result: |
-    Список товаров Gucci не отображается, на странице остается изначальный список товаров
+    environment: |
+      Google Chrome Версия: 140.0.7339.128 (Официальная сборка) (64 бит)
+      ОС Windows 10 Pro ver 22H2
+    steps-to-reproduce: |
+      1. Зайти на страницу https://products-store-ru.hexlet.app/
+      2. Выбираем бренд Gucci
+    expected-result: |
+      Должен отобразиться список товаров Gussi
+    actual-result: |
+      Список товаров Gucci не отображается, на странице остается изначальный список товаров
 
 test-cases:
   - summary: |
@@ -35,16 +34,16 @@ test-cases:
 bugreports:
   - summary: |
     В карточке товара отображается не вся информация для пользователя
-  environment: |
-    Google Chrome Версия: 140.0.7339.128 (Официальная сборка) (64 бит)
-    ОС Windows 10 Pro ver 22H2
-  steps-to-reproduce: |
-    1. Зайти на страницу https://products-store-ru.hexlet.app/
-    2. Перейти в карточку товара
-  expected-result: |
-    В карточке должна отобразиться полная информация о товаре
-  actual-result: |
-    В карточке не отображаются гарантийные сроки и почта для связи с производителем
+    environment: |
+      Google Chrome Версия: 140.0.7339.128 (Официальная сборка) (64 бит)
+      ОС Windows 10 Pro ver 22H2
+    steps-to-reproduce: |
+      1. Зайти на страницу https://products-store-ru.hexlet.app/
+      2. Перейти в карточку товара
+    expected-result: |
+      В карточке должна отобразиться полная информация о товаре
+    actual-result: |
+      В карточке не отображаются гарантийные сроки и почта для связи с производителем
 
 # non-functional ------------------------------------------------------------------------------------------------------
 
@@ -59,19 +58,19 @@ test-cases:
   
 bugreports:
   - summary: |
-    Сайт не удобен для использования
-  environment: |
-    Google Chrome Версия: 140.0.7339.128 (Официальная сборка) (64 бит)
-    ОС Windows 10 Pro ver 22H2
-  steps-to-reproduce: |
-    1. Зайти на страницу https://products-store-ru.hexlet.app/
-    2. Оцениваем визуальное оформление
-  expected-result: |
-    Сайт должен быть удобен для использования
-  actual-result: |
-    Нет навигации по сайту, нет возможности зарегистрировать пользователя, сайт первично открывается на английском языке,
-    нет нумерации страниц при просмотре товара, цены только в долларах, при смене языка на английский нет флага страны,
-    в строке максимальная цена написаны рандомные числы, нет визуального оформления вкладки корзины и магазина
+      Сайт не удобен для использования
+    environment: |
+      Google Chrome Версия: 140.0.7339.128 (Официальная сборка) (64 бит)
+      ОС Windows 10 Pro ver 22H2
+    steps-to-reproduce: |
+      1. Зайти на страницу https://products-store-ru.hexlet.app/
+      2. Оцениваем визуальное оформление
+    expected-result: |
+      Сайт должен быть удобен для использования
+    actual-result: |
+      Нет навигации по сайту, нет возможности зарегистрировать пользователя, сайт первично открывается на английском языке,
+      нет нумерации страниц при просмотре товара, цены только в долларах, при смене языка на английский нет флага страны,
+      в строке максимальная цена написаны рандомные числы, нет визуального оформления вкладки корзины и магазина
   
 test-cases:
   - summary: |
@@ -84,16 +83,16 @@ test-cases:
   
 bugreports:
   - summary: |
-    Не доступна мобильная версия
-  environment: |
-    Samsung Galaxy Note 10
-    ОС Android ver 12
-  steps-to-reproduce: |
-    1. Зайти на страницу https://products-store-ru.hexlet.app/
-  expected-result: |
-    Сайт должен загрузить мобильную версию
-  actual-result: |
-    Сайт загружает не адаптативную веб версию
+      Не доступна мобильная версия
+    environment: |
+      Samsung Galaxy Note 10
+      ОС Android ver 12
+    steps-to-reproduce: |
+      1. Зайти на страницу https://products-store-ru.hexlet.app/
+    expected-result: |
+      Сайт должен загрузить мобильную версию
+    actual-result: |
+      Сайт загружает не адаптативную веб версию
 
 test-cases:
   - summary: |
@@ -106,18 +105,18 @@ test-cases:
   
 bugreports:
   - summary: |
-    Сайт не справляется с большим трафиком
-  environment: |
-    Google Chrome Версия: 140.0.7339.128 (Официальная сборка) (64 бит)
-    ОС Windows 10 Pro ver 22H2
-  steps-to-reproduce: |
-    1. Зайти на страницу https://products-store-ru.hexlet.app/
-    2. Открыть DevTool
-    3. На вкладе Network изменить значение No throttling на 3G
-  expected-result: |
-    Сайт должен загрузиться менее чем за 10ms
-  actual-result: |
-    Сайт долго загружается ошибка (failed)net::ERR_CONNECTION_RESET
+      Сайт не справляется с большим трафиком
+    environment: |
+      Google Chrome Версия: 140.0.7339.128 (Официальная сборка) (64 бит)
+      ОС Windows 10 Pro ver 22H2
+    steps-to-reproduce: |
+      1. Зайти на страницу https://products-store-ru.hexlet.app/
+      2. Открыть DevTool
+      3. На вкладе Network изменить значение No throttling на 3G
+    expected-result: |
+      Сайт должен загрузиться менее чем за 10ms
+    actual-result: |
+      Сайт долго загружается ошибка (failed)net::ERR_CONNECTION_RESET
 
 test-cases:
   - summary: |
@@ -130,17 +129,17 @@ test-cases:
   
 bugreports:
   - summary: |
-    Сайт не переводится на русский язык
-  environment: |
-    Google Chrome Версия: 140.0.7339.128 (Официальная сборка) (64 бит)
-    ОС Windows 10 Pro ver 22H2
-  steps-to-reproduce: |
-    1. Зайти на страницу https://products-store-ru.hexlet.app/
-    2. Изменить значение Language на Russian
-  expected-result: |
-    Все надписи должны перевестись на русский язык
-  actual-result: |
-    Цены указаны в долларах а не в рублях, не перевелись вкладки (Магазин, Корзина, Язык), не перевелись категории товаров
+      Сайт не переводится на русский язык
+    environment: |
+      Google Chrome Версия: 140.0.7339.128 (Официальная сборка) (64 бит)
+      ОС Windows 10 Pro ver 22H2
+    steps-to-reproduce: |
+      1. Зайти на страницу https://products-store-ru.hexlet.app/
+      2. Изменить значение Language на Russian
+    expected-result: |
+      Все надписи должны перевестись на русский язык
+    actual-result: |
+      Цены указаны в долларах а не в рублях, не перевелись вкладки (Магазин, Корзина, Язык), не перевелись категории товаров
 
 
 # implicit ----------------------------------------------------------------------------------------------------------------------------
@@ -156,17 +155,17 @@ test-cases:
   
 bugreports:
   - summary: |
-    Нет возможжности зарегистрировать пользователя
-  environment: |
-    Google Chrome Версия: 140.0.7339.128 (Официальная сборка) (64 бит)
-    ОС Windows 10 Pro ver 22H2
-  steps-to-reproduce: |
-    1. Зайти на страницу https://products-store-ru.hexlet.app/
-    2. Ищем форму регистрации пользователя
-  expected-result: |
-    Есть форма регистрации пользоватекля
-  actual-result: |
-    Нет формы регистрации пользователя, нет возможности зарегистрироваться
+      Нет возможжности зарегистрировать пользователя
+    environment: |
+      Google Chrome Версия: 140.0.7339.128 (Официальная сборка) (64 бит)
+      ОС Windows 10 Pro ver 22H2
+    steps-to-reproduce: |
+      1. Зайти на страницу https://products-store-ru.hexlet.app/
+      2. Ищем форму регистрации пользователя
+    expected-result: |
+      Есть форма регистрации пользоватекля
+    actual-result: |
+      Нет формы регистрации пользователя, нет возможности зарегистрироваться
 
 test-cases:
   - summary: |
@@ -179,13 +178,13 @@ test-cases:
   
 bugreports:
   - summary: |
-    Язык сайта автоматически не меняется под настройки языка браузера
-  environment: |
-    Google Chrome Версия: 140.0.7339.128 (Официальная сборка) (64 бит)
-    ОС Windows 10 Pro ver 22H2
-  steps-to-reproduce: |
-    1. Зайти на страницу https://products-store-ru.hexlet.app/
-  expected-result: |
-    Сайт должен открыться на русском языке
-  actual-result: |
-    Сайт по умолчанию открывается на английском языке
+      Язык сайта автоматически не меняется под настройки языка браузера
+    environment: |
+      Google Chrome Версия: 140.0.7339.128 (Официальная сборка) (64 бит)
+      ОС Windows 10 Pro ver 22H2
+    steps-to-reproduce: |
+      1. Зайти на страницу https://products-store-ru.hexlet.app/
+    expected-result: |
+      Сайт должен открыться на русском языке
+    actual-result: |
+      Сайт по умолчанию открывается на английском языке
