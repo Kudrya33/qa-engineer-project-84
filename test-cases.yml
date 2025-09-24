@@ -108,7 +108,7 @@
     Открыта главная страница https://products-store-ru.hexlet.app/
     Выбран язык сайта English
   test-data: |
-  
+    URL = https://products-store-ru.hexlet.app/
   steps:
     - Визуальный осмотр интерфейса на удабство использования
   expected-result: |
@@ -176,7 +176,7 @@
   prerequisites: |
     Открыта страница https://products-store-ru.hexlet.app/
   test-data: |
-    Браузео Chrome
+    URL = https://products-store-ru.hexlet.app/
   steps:
     - Открываем DevTool
     - Переходим на вкладку networck
@@ -194,7 +194,7 @@
     Доступен для тестированя Смартфон
     Открыта страница https://www.google.com/
   test-data: |
-    
+    URL = https://products-store-ru.hexlet.app/
   steps:
     - Переход на страниццу https://products-store-ru.hexlet.app/
     - Повторение первого шага на всех устрпойствах
@@ -225,7 +225,7 @@
     Открыта страница https://products-store-ru.hexlet.app/
     Выбран язык сайта English
   test-data: |
-    
+    URL = https://products-store-ru.hexlet.app/
   steps:
     - Поиск формы регистрации пользователя
   expected-result: |
@@ -239,7 +239,7 @@
     Браузер Chrome с выбранным языком по умолчанию "Русский"
     Открыта страница https://www.google.com/
   test-data: |
-    
+    URL = https://products-store-ru.hexlet.app/
   steps:
     - Переход на страницу https://products-store-ru.hexlet.app/
   expected-result: |
